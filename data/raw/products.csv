@@ -1,0 +1,21 @@
+product_id,product_name,product_category
+P001,Savings Account,DEPOSIT
+P002,Current Account,DEPOSIT
+P003,Salary Account,DEPOSIT
+P004,Fixed Deposit,DEPOSIT
+P005,Recurring Deposit,DEPOSIT
+P006,Personal Loan,LOAN
+P007,Home Loan,LOAN
+P008,Auto Loan,LOAN
+P009,Education Loan,LOAN
+P010,Business Loan,LOAN
+P011,Debit Card,CARD
+P012,Credit Card,CARD
+P013,Mobile Banking,DIGITAL
+P014,Internet Banking,DIGITAL
+P015,Mobile Wallet,DIGITAL
+P016,Remittance,PAYMENT
+P017,Fund Transfer,PAYMENT
+P018,Bill Payment,PAYMENT
+P019,QR Payment,PAYMENT
+P020,ATM Service,PAYMENT

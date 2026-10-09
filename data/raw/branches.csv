@@ -1,0 +1,51 @@
+branch_id,branch_name,province,district,city,branch_type
+BR0001,Kathmandu Main,Bagmati,Kathmandu,Kathmandu,MAIN
+BR0002,Lalitpur Branch,Bagmati,Lalitpur,Lalitpur,URBAN
+BR0003,Bhaktapur Branch,Bagmati,Bhaktapur,Bhaktapur,URBAN
+BR0004,Pokhara Branch,Gandaki,Kaski,Pokhara,MAIN
+BR0005,Biratnagar Branch,Koshi,Morang,Biratnagar,URBAN
+BR0006,Birgunj Branch,Madhesh,Parsa,Birgunj,URBAN
+BR0007,Butwal Branch,Lumbini,Rupandehi,Butwal,URBAN
+BR0008,Nepalgunj Branch,Lumbini,Banke,Nepalgunj,URBAN
+BR0009,Dharan Branch,Koshi,Sunsari,Dharan,URBAN
+BR0010,Bharatpur Branch,Bagmati,Chitwan,Bharatpur,URBAN
+BR0011,Butwal Branch 11,Lumbini,Rupandehi,Butwal,URBAN
+BR0012,Biratnagar Branch 12,Koshi,Morang,Biratnagar,MAIN
+BR0013,Kathmandu Branch 13,Bagmati,Kathmandu,Kathmandu,URBAN
+BR0014,Janakpur Branch 14,Madhesh,Dhanusha,Janakpur,URBAN
+BR0015,Nepalgunj Branch 15,Lumbini,Banke,Nepalgunj,URBAN
+BR0016,Butwal Branch 16,Lumbini,Rupandehi,Butwal,MAIN
+BR0017,Pokhara Branch 17,Gandaki,Kaski,Pokhara,URBAN
+BR0018,Damauli Branch 18,Gandaki,Tanahun,Damauli,RURAL
+BR0019,Biratnagar Branch 19,Koshi,Morang,Biratnagar,URBAN
+BR0020,Dharan Branch 20,Koshi,Sunsari,Dharan,URBAN
+BR0021,Janakpur Branch 21,Madhesh,Dhanusha,Janakpur,MAIN
+BR0022,Damauli Branch 22,Gandaki,Tanahun,Damauli,URBAN
+BR0023,Pokhara Branch 23,Gandaki,Kaski,Pokhara,URBAN
+BR0024,Nepalgunj Branch 24,Lumbini,Banke,Nepalgunj,MAIN
+BR0025,Nepalgunj Branch 25,Lumbini,Banke,Nepalgunj,MAIN
+BR0026,Bhaktapur Branch 26,Bagmati,Bhaktapur,Bhaktapur,URBAN
+BR0027,Bharatpur Branch 27,Bagmati,Chitwan,Bharatpur,MAIN
+BR0028,Kathmandu Branch 28,Bagmati,Kathmandu,Kathmandu,URBAN
+BR0029,Birendranagar Branch 29,Karnali,Surkhet,Birendranagar,URBAN
+BR0030,Nepalgunj Branch 30,Lumbini,Banke,Nepalgunj,RURAL
+BR0031,Lalitpur Branch 31,Bagmati,Lalitpur,Lalitpur,RURAL
+BR0032,Birgunj Branch 32,Madhesh,Parsa,Birgunj,URBAN
+BR0033,Birendranagar Branch 33,Karnali,Surkhet,Birendranagar,RURAL
+BR0034,Dharan Branch 34,Koshi,Sunsari,Dharan,URBAN
+BR0035,Bhaktapur Branch 35,Bagmati,Bhaktapur,Bhaktapur,URBAN
+BR0036,Lalitpur Branch 36,Bagmati,Lalitpur,Lalitpur,RURAL
+BR0037,Damauli Branch 37,Gandaki,Tanahun,Damauli,RURAL
+BR0038,Birendranagar Branch 38,Karnali,Surkhet,Birendranagar,URBAN
+BR0039,Nepalgunj Branch 39,Lumbini,Banke,Nepalgunj,RURAL
+BR0040,Pokhara Branch 40,Gandaki,Kaski,Pokhara,URBAN
+BR0041,Bhaktapur Branch 41,Bagmati,Bhaktapur,Bhaktapur,URBAN
+BR0042,Pokhara Branch 42,Gandaki,Kaski,Pokhara,RURAL
+BR0043,Dhangadhi Branch 43,Sudurpashchim,Kailali,Dhangadhi,MAIN
+BR0044,Damauli Branch 44,Gandaki,Tanahun,Damauli,RURAL
+BR0045,Damauli Branch 45,Gandaki,Tanahun,Damauli,URBAN
+BR0046,Nepalgunj Branch 46,Lumbini,Banke,Nepalgunj,URBAN
+BR0047,Biratnagar Branch 47,Koshi,Morang,Biratnagar,MAIN
+BR0048,Janakpur Branch 48,Madhesh,Dhanusha,Janakpur,RURAL
+BR0049,Dharan Branch 49,Koshi,Sunsari,Dharan,URBAN
+BR0050,Dhangadhi Branch 50,Sudurpashchim,Kailali,Dhangadhi,URBAN
