@@ -1,0 +1,2 @@
+
+docker run -d --name bankscale-clickhouse --hostname bankscale-clickhouse --memory=2g --ulimit nofile=262144:262144 -p 127.0.0.1:8123:8123 -p 127.0.0.1:9000:9000 -e CLICKHOUSE_DB=banks­cale -e CLICKHOUSE_USER=banks­cale_user -e CLICKHOUSE_PASSWORD=BankScaleDemo2026! -e CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1 -v bankscale_clickhouse_data:/var/lib/clickhouse clickhouse/clickhouse-server:26.8
