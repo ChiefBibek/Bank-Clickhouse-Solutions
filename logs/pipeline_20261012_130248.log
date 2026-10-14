@@ -1,0 +1,110 @@
+2026-10-12 13:02:48,895 | INFO | BankScale pipeline started. Run ID: 1bc0b472-968a-4dd3-9830-cadd846187ab
+2026-10-12 13:02:48,897 | INFO | Detailed log: D:\BankScale\logs\pipeline_20261012_130248.log
+2026-10-12 13:02:48,898 | INFO | Starting step: PySpark ETL
+2026-10-12 13:03:47,256 | INFO | PySpark ETL output:
+Missing Python executable 'C:\Program Files\Python312\python.exe', defaulting to 'C:\Users\nm_ma\AppData\Roaming\Python\Python312\site-packages\pyspark\bin\..' for SPARK_HOME environment variable. Please install Python or specify the correct Python executable in PYSPARK_DRIVER_PYTHON or PYSPARK_PYTHON environment variable to detect SPARK_HOME safely.
++--------------------------------+-----+
+|reason                          |count|
++--------------------------------+-----+
+|Negative amount requires review |20   |
+|Duplicate transaction ID        |20   |
+|Missing customer ID             |20   |
+|Account ID not found in accounts|10   |
+|Missing branch ID               |10   |
++--------------------------------+-----+
+
+
+========== BANKSCALE ETL SUMMARY ==========
+Raw records:       200000
+Valid records:     199920
+Rejected records:  80
+Reconciliation:    True
+Curated output:    D:\BankScale\data\processed\transactions
+Rejected output:   D:\BankScale\data\rejected\transactions
+===========================================
+
+SUCCESS: The process with PID 12032 (child process of PID 25172) has been terminated.
+SUCCESS: The process with PID 25172 (child process of PID 22744) has been terminated.
+SUCCESS: The process with PID 22744 (child process of PID 19008) has been terminated.
+2026-10-12 13:03:47,259 | INFO | PySpark ETL messages:
+The system cannot find the path specified.
+WARNING: Using incubator modules: jdk.incubator.vector
+WARNING: package sun.security.action not in java.base
+Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+2026-10-12 13:03:10,720 | INFO | Reading raw transactions
+2026-10-12 13:03:12,874 | INFO | Reading account, customer and branch master data
+
+[Stage 3:>                                                          (0 + 5) / 5]
+
+                                                                                
+2026-10-12 13:03:18,645 | INFO | Raw transaction count: 200000
+2026-10-12 13:03:18,647 | INFO | Building reference lookups
+2026-10-12 13:03:20,704 | INFO | Applying validation rules
+2026-10-12 13:03:21,139 | INFO | Writing curated Parquet data
+
+[Stage 6:>    (0 + 1) / 1][Stage 7:>    (0 + 5) / 5][Stage 8:>    (0 + 1) / 1]
+
+[Stage 7:>                  (0 + 5) / 5][Stage 8:>                  (0 + 1) / 1]
+
+                                                                                
+
+[Stage 21:>                                                         (0 + 5) / 5]
+
+[Stage 21:==================================>                       (3 + 2) / 5]
+
+                                                                                
+2026-10-12 13:03:31,603 | INFO | Writing rejected records with rejection reasons
+
+[Stage 24:===>              (1 + 4) / 5][Stage 26:>                 (0 + 1) / 1]
+
+[Stage 24:===========>                                              (1 + 4) / 5]
+
+                                                                                
+
+[Stage 37:>                                                         (0 + 5) / 5]
+
+[Stage 37:==================================>                       (3 + 2) / 5]
+
+                                                                                
+
+[Stage 53:>                                                         (0 + 5) / 5]
+
+[Stage 53:=======================>                                  (2 + 3) / 5]
+
+                                                                                
+
+[Stage 71:>                                                         (0 + 5) / 5]
+
+[Stage 71:==================================>                       (3 + 2) / 5]
+
+                                                                                
+2026-10-12 13:03:42,306 | INFO | Rejection breakdown:
+
+[Stage 89:>                                                         (0 + 5) / 5]
+
+                                                                                
+2026-10-12 13:03:46,587 | INFO | Closing down clientserver connection
+2026-10-12 13:03:47,260 | INFO | Completed step: PySpark ETL
+2026-10-12 13:03:47,264 | INFO | Starting step: ClickHouse load
+2026-10-12 13:03:50,350 | INFO | ClickHouse load messages:
+2026-10-12 13:03:48,482 | INFO | Found 5 Parquet files.
+2026-10-12 13:03:48,482 | INFO | Loading part-00000-a1ac3355-faa4-4e1d-8291-0c5251f71f3d-c000.snappy.parquet
+2026-10-12 13:03:48,934 | INFO | Loaded part-00000-a1ac3355-faa4-4e1d-8291-0c5251f71f3d-c000.snappy.parquet.
+2026-10-12 13:03:48,934 | INFO | Loading part-00001-a1ac3355-faa4-4e1d-8291-0c5251f71f3d-c000.snappy.parquet
+2026-10-12 13:03:49,261 | INFO | Loaded part-00001-a1ac3355-faa4-4e1d-8291-0c5251f71f3d-c000.snappy.parquet.
+2026-10-12 13:03:49,261 | INFO | Loading part-00002-a1ac3355-faa4-4e1d-8291-0c5251f71f3d-c000.snappy.parquet
+2026-10-12 13:03:49,578 | INFO | Loaded part-00002-a1ac3355-faa4-4e1d-8291-0c5251f71f3d-c000.snappy.parquet.
+2026-10-12 13:03:49,578 | INFO | Loading part-00003-a1ac3355-faa4-4e1d-8291-0c5251f71f3d-c000.snappy.parquet
+2026-10-12 13:03:49,950 | INFO | Loaded part-00003-a1ac3355-faa4-4e1d-8291-0c5251f71f3d-c000.snappy.parquet.
+2026-10-12 13:03:49,951 | INFO | Loading part-00004-a1ac3355-faa4-4e1d-8291-0c5251f71f3d-c000.snappy.parquet
+2026-10-12 13:03:50,244 | INFO | Loaded part-00004-a1ac3355-faa4-4e1d-8291-0c5251f71f3d-c000.snappy.parquet.
+2026-10-12 13:03:50,289 | INFO | Expected rows: 199920
+2026-10-12 13:03:50,289 | INFO | Staged rows: 199920
+2026-10-12 13:03:50,315 | INFO | Reporting table updated successfully.
+2026-10-12 13:03:50,326 | INFO | Final reporting row count: 199920
+2026-10-12 13:03:50,327 | INFO | Pipeline loading step completed successfully.
+2026-10-12 13:03:50,350 | INFO | Completed step: ClickHouse load
+2026-10-12 13:03:50,350 | INFO | BANKSCALE PIPELINE SUCCEEDED.
+2026-10-12 13:03:50,354 | INFO | Audit summary saved: D:\BankScale\logs\pipeline_audit.csv
